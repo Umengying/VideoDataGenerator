@@ -1,11 +1,11 @@
-from keras_dataset import VideoDataGenerator
+from video_data_generator import VideoDataGenerator
 
 
 if __name__ == '__main__':
 
     gen = VideoDataGenerator()
     data_gen = gen.flow_from_directory(
-        directory="/data1/liangkai.yu/dataset/UCF101",
+        directory="/data/dataset/UCF101",
         target_size=(112,112),
         allow_lt_clip_size=True,
         shuffle=True
